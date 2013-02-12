@@ -16,6 +16,12 @@
 		C4E4FBC816C9C0F300E694FA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E4FBC716C9C0F300E694FA /* Default.png */; };
 		C4E4FBCA16C9C0F300E694FA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E4FBC916C9C0F300E694FA /* Default@2x.png */; };
 		C4E4FBCC16C9C0F300E694FA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E4FBCB16C9C0F300E694FA /* Default-568h@2x.png */; };
+		C4E4FBD316C9C11900E694FA /* Storyboard_Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E4FBD216C9C11900E694FA /* Storyboard_Main_iPhone.storyboard */; };
+		C4E4FBD816C9C6FF00E694FA /* TransactionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E4FBD716C9C6FF00E694FA /* TransactionVC.m */; };
+		C4E4FBDB16C9CC0A00E694FA /* slr_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E4FBDA16C9CC0A00E694FA /* slr_camera.png */; };
+		C4E4FBDF16C9CF5D00E694FA /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E4FBDE16C9CF5D00E694FA /* Globals.m */; };
+		C4E4FBE116C9D88B00E694FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4FBE016C9D88A00E694FA /* QuartzCore.framework */; };
+		C4E4FBE516C9EDEC00E694FA /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E4FBE416C9EDEC00E694FA /* Transaction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,15 @@
 		C4E4FBC716C9C0F300E694FA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C4E4FBC916C9C0F300E694FA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C4E4FBCB16C9C0F300E694FA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C4E4FBD216C9C11900E694FA /* Storyboard_Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_Main_iPhone.storyboard; sourceTree = "<group>"; };
+		C4E4FBD616C9C6FF00E694FA /* TransactionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TransactionVC.h; path = ViewControllers/TransactionVC.h; sourceTree = "<group>"; };
+		C4E4FBD716C9C6FF00E694FA /* TransactionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransactionVC.m; path = ViewControllers/TransactionVC.m; sourceTree = "<group>"; };
+		C4E4FBDA16C9CC0A00E694FA /* slr_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slr_camera.png; sourceTree = "<group>"; };
+		C4E4FBDD16C9CF5D00E694FA /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		C4E4FBDE16C9CF5D00E694FA /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
+		C4E4FBE016C9D88A00E694FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C4E4FBE316C9EDEC00E694FA /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		C4E4FBE416C9EDEC00E694FA /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E4FBE116C9D88B00E694FA /* QuartzCore.framework in Frameworks */,
 				C4E4FBB616C9C0F300E694FA /* UIKit.framework in Frameworks */,
 				C4E4FBB816C9C0F300E694FA /* Foundation.framework in Frameworks */,
 				C4E4FBBA16C9C0F300E694FA /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +67,7 @@
 		C4E4FBA916C9C0F300E694FA = {
 			isa = PBXGroup;
 			children = (
+				C4E4FBE016C9D88A00E694FA /* QuartzCore.framework */,
 				C4E4FBBB16C9C0F300E694FA /* Budget */,
 				C4E4FBB416C9C0F300E694FA /* Frameworks */,
 				C4E4FBB316C9C0F300E694FA /* Products */,
@@ -78,9 +95,14 @@
 		C4E4FBBB16C9C0F300E694FA /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				C4E4FBE216C9EDD300E694FA /* DataModels */,
+				C4E4FBDC16C9CED600E694FA /* Singleton */,
+				C4E4FBD916C9CC0A00E694FA /* Images */,
+				C4E4FBD516C9C6CC00E694FA /* ViewControllers */,
 				C4E4FBC416C9C0F300E694FA /* AppDelegate.h */,
 				C4E4FBC516C9C0F300E694FA /* AppDelegate.m */,
 				C4E4FBBC16C9C0F300E694FA /* Supporting Files */,
+				C4E4FBD216C9C11900E694FA /* Storyboard_Main_iPhone.storyboard */,
 			);
 			path = Budget;
 			sourceTree = "<group>";
@@ -97,6 +119,41 @@
 				C4E4FBCB16C9C0F300E694FA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4E4FBD516C9C6CC00E694FA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4E4FBD616C9C6FF00E694FA /* TransactionVC.h */,
+				C4E4FBD716C9C6FF00E694FA /* TransactionVC.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C4E4FBD916C9CC0A00E694FA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C4E4FBDA16C9CC0A00E694FA /* slr_camera.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C4E4FBDC16C9CED600E694FA /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				C4E4FBDD16C9CF5D00E694FA /* Globals.h */,
+				C4E4FBDE16C9CF5D00E694FA /* Globals.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		C4E4FBE216C9EDD300E694FA /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4E4FBE316C9EDEC00E694FA /* Transaction.h */,
+				C4E4FBE416C9EDEC00E694FA /* Transaction.m */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +211,8 @@
 				C4E4FBC816C9C0F300E694FA /* Default.png in Resources */,
 				C4E4FBCA16C9C0F300E694FA /* Default@2x.png in Resources */,
 				C4E4FBCC16C9C0F300E694FA /* Default-568h@2x.png in Resources */,
+				C4E4FBD316C9C11900E694FA /* Storyboard_Main_iPhone.storyboard in Resources */,
+				C4E4FBDB16C9CC0A00E694FA /* slr_camera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +225,9 @@
 			files = (
 				C4E4FBC216C9C0F300E694FA /* main.m in Sources */,
 				C4E4FBC616C9C0F300E694FA /* AppDelegate.m in Sources */,
+				C4E4FBD816C9C6FF00E694FA /* TransactionVC.m in Sources */,
+				C4E4FBDF16C9CF5D00E694FA /* Globals.m in Sources */,
+				C4E4FBE516C9EDEC00E694FA /* Transaction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
